@@ -1,4 +1,4 @@
-import { images } from "../assets/images";
+import { images } from "../assets/Images.js";
 import { users } from "../data/Users"
 import  "./Card.css"
 const Card = () => {
