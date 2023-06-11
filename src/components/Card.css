@@ -1,0 +1,65 @@
+.card{
+  width: 350px;
+  height: 375px;
+  border-radius: 15px;
+}
+
+.header{
+  height: 285px;
+  border-bottom: 1px solid rgba(218, 218, 218, .80);
+}
+
+.logo{
+  margin: -55px auto 0px auto;
+}
+.logo img{
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.info{
+  height: 50px;
+}
+
+.info h1{
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+  line-height: 28px;
+}
+.info span{
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+.info p{
+  color: var(--dark-grayish-blue);
+  font-size: 13px;
+  line-height: 27px;
+}
+.footer{
+  width: 295px;
+  margin: auto;
+}
+.likes{
+  height: 50px;
+  margin-top: 20px;
+}
+.likes h2{
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.likes p{
+  font-size: 10px;
+  color: var(--dark-grayish-blue);
+  line-height: 1px;
+}
+
+@media (max-width: 375px) {
+  .card{
+    width: 326px;
+  }  
+}
