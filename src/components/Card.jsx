@@ -4,31 +4,31 @@ import  "./Card.css"
 const Card = () => {
   const [user] = users;
   return (
-    <div className="bg-white card overflow-hidden">
-      <div className="w-full header flex items-center flex-col text-center">
-        <img src={images.bgCard} alt="card top" />
-        <div className="logo">
+    <div data-cy='card' className="bg-white card overflow-hidden">
+      <header data-cy='header' className="w-full header flex items-center flex-col text-center">
+        <img data-cy='imgTop' src={images.bgCard} alt="card top" />
+        <div data-cy='logo' className="logo">
           <img src={images.imgVictor} alt="Victor Crest" />
         </div>
         <div className="info w-1/2 m-auto">
-          <h1>{user.name} <span>{user.age}</span></h1>
-          <p>{user.city}</p>
+          <h1 data-cy='name'>{user.name} <span data-cy='age'>{user.age}</span></h1>
+          <p data-cy='city'>{user.city}</p>
         </div>
-      </div>
-      <div className="footer flex items-center text-center tracking-widest">
+      </header>
+      <footer data-cy='footer' className="footer flex items-center text-center tracking-widest">
         <div className="likes w-1/3">
-          <h2>{user.followers}</h2>
-          <p>{user.text1}</p>
-        </div>
-        <div className="likes w-1/3">
-          <h2>{user.likes}</h2>
-          <p>{user.text2}</p>
+          <h2 data-cy='number'>{user.followers}</h2>
+          <p data-cy='text'>{user.text1}</p>
         </div>
         <div className="likes w-1/3">
-          <h2>{user.photos}</h2>
-          <p>{user.text3}</p>
+          <h2 data-cy='number'>{user.likes}</h2>
+          <p data-cy='text'>{user.text2}</p>
         </div>
-      </div>
+        <div className="likes w-1/3">
+          <h2 data-cy='number'>{user.photos}</h2>
+          <p data-cy='text'>{user.text3}</p>
+        </div>
+      </footer>
     </div>
   )
 }
