@@ -7,6 +7,7 @@
 * HTML5
 * CSS3
 * Tailwind
+* Cypress
 
 ## Instalación 💻
 
@@ -24,6 +25,12 @@ npm install
 utilizar el comando:
 ```bash
 npm run dev
+```
+
+**Levantar Cypress**:
+utilizar el comando:
+```bash
+npx cypress open
 ```
 
 **A configurar lo que desees 😄**
